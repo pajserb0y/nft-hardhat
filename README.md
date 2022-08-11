@@ -6,3 +6,6 @@
 3.Dynamic SVG NFT(fully onchain NFT, randomness based on price feed)
 - Pros: Data is on chain
 - Cons: Much expensive
+
+If price of ETH is above some number ---> we make happy face nft
+If price of ETH is below some number ---> we make sad face nft
