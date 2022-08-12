@@ -20,7 +20,7 @@ const RINKEBY_RPC_URL =
 const KOVAN_RPC_URL = process.env.KOVAN_RPC_URL || "https://eth-kovan.alchemyapi.io/v2/your-api-key"
 const POLYGON_MAINNET_RPC_URL =
     process.env.POLYGON_MAINNET_RPC_URL || "https://polygon-mainnet.alchemyapi.io/v2/your-api-key"
-const PRIVATE_KEY = process.env.PRIVATE_KEY
+const PRIVATE_KEY = process.env.RINKEBY_PRIVATE_KEY
 // optional
 const MNEMONIC = process.env.MNEMONIC || "Your mnemonic"
 const FORKING_BLOCK_NUMBER = process.env.FORKING_BLOCK_NUMBER
@@ -61,6 +61,7 @@ module.exports = {
             //     mnemonic: MNEMONIC,
             //   },
             saveDeployments: true,
+            blockConfirmations: 5,
             chainId: 4,
         },
         mainnet: {
